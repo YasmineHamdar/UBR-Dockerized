@@ -1,0 +1,7 @@
+ install.packages('abind')
+ install.packages('zoo')
+ install.packages('xts')
+ install.packages('quantmod')
+ install.packages('ROCR')
+ install.packages("DMwR")
+install.packages(c( "libcurl", "curl", "ROCR", "TTR", "quantmod",  "operators", "fields"))

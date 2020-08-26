@@ -1,0 +1,17 @@
+version: "3"
+
+services: 
+    jupyter-tf-gpu: 
+        build:
+            context: .
+            dockerfile: Dockerfile
+
+        volumes: 
+            - ./notebooks/:/tf/
+            - ./logs/:/etc/jupyter/
+            - ./scripts/:/apps/scripts/
+            - ./data/:/apps/data
+            - ./output/:/apps/output
+            
+        ports: 
+            - 8080:8888
